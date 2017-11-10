@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/listOfuser', 'ApiManager\ApiController@list_of_user');
