@@ -16,3 +16,12 @@ Route::get('/', function () {
 });
 
 Route::get('/listOfuser', 'ApiManager\ApiController@list_of_user');
+
+Route::get('auth/register', 'Auth\User\RegisterController@index');
+
+Route::post('/doRegister', 'Auth\User\RegisterController@register');
+
+Route::get('/login', 'Auth\Dev\DevController@login');
+// Auth::routes();
+//
+// Route::get('/home', 'HomeController@index')->name('home');
