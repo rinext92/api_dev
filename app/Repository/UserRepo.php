@@ -24,15 +24,15 @@ class UserRepo extends Repository
     return $this->user->get($column);
   }
 
-  public function store($username, $password, $email){
-    $users =  $this->user([
-      'username' => $username,
-      'password' => bcrypt($password),
-      'email' => $email
-    ]);
-
-    if ($users->save()){
-
-    }
-  }
+  // public function store($username, $password, $email){
+  //   $users =  $this->user([
+  //     'username' => $username,
+  //     'password' => bcrypt($password),
+  //     'email' => $email
+  //   ]);
+  //
+  //   if ($users->save()){
+  //
+  //   }
+  // }
 }
