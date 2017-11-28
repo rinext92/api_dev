@@ -177,6 +177,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Barryvdh\Cors\ServiceProvider::class,
+        Adldap\Laravel\AdldapServiceProvider::class,
 
     ],
 
@@ -230,6 +231,7 @@ return [
         'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
         'Form'      => Collective\Html\FormFacade::class,
         'Html'      => Collective\Html\HtmlFacade::class,
+        'Adldap' => Adldap\Laravel\Facades\Adldap::class
     ],
 
 ];
